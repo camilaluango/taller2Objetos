@@ -9,6 +9,13 @@ const perfumeria = {
         const nuevoPerfume = {nombre,precio,cantidad};
         this.perfumes.push(nuevoPerfume);//push se usa para agregar el producto al array
     },
-
+    actCantProductos(nombre,nuevaCantidad){
+        const producto = this.perfumes.find(perfumes => perfumes.nombre === nombre);// el find se usa para buscar el nombre del perfume en el array y poder modificar el parametro cantidad
+        if (producto) {
+            producto.cantidad = nuevaCantidad;
+        } else {
+            console.log("Producto no encontrado");
+        }
+    },
 };
 
