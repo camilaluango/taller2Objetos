@@ -17,5 +17,10 @@ const perfumeria = {
             console.log("Producto no encontrado");
         }
     },
+    mostrarProductos() {
+        this.perfumes.forEach(perfume => {
+            console.log(`El perfume ${perfume.nombre}, tiene un precio de ${perfume.precio} dolares y hay ${perfume.cantidad} unidades disponibles`);
+        });
+    }
 };
 
