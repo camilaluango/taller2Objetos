@@ -5,6 +5,10 @@ const perfumeria = {
         {nombre:"360", precio:400, cantidad:15},
         {nombre:"ultra male", precio:1000, cantidad:28}
     ],
+    agregarProducto(nombre,precio,cantidad){
+        const nuevoPerfume = {nombre,precio,cantidad};
+        this.perfumes.push(nuevoPerfume);//push se usa para agregar el producto al array
+    },
 
 };
 
