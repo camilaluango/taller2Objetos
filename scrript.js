@@ -23,4 +23,10 @@ const perfumeria = {
         });
     }
 };
+perfumeria.agregarProducto("lacoste roja",30,50);
+perfumeria.actCantProductos("sauvage", 30);
+perfumeria.mostrarProductos();
+
+
+console.log(perfumeria)
 
